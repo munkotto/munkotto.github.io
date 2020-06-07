@@ -1,0 +1,145 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    content: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.myApp {
+    display: block;
+    position: relative;
+    top: 53px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    content: 0px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.headline {
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background-color: black;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.start {
+    display: inline-block;
+    max-width: 50%;
+    min-height: 80%;
+    position: relative;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333;
+    display: block;
+}
+
+.img1 {
+    float: left;
+    max-width: min-content;
+}
+
+.img2 {
+    float: right;
+    position: relative;
+    top: -255px;
+    max-width: min-content;
+}
+
+.top {
+    display: block;
+    position: relative;
+    height: 319px;
+    background-color: #666666;
+}
+
+span {
+    color: yellow;
+}
+
+span:hover {
+    color: black;
+}
+
+.rating {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    font-size: 40px;
+}
+
+.body {
+    margin: 10px 260px 0px 260px;
+}
+
+#video div {
+    display: inline-block;
+    position: relative;
+    max-width: 330px;
+    left: 25px;
+}
+
+#video div p {
+    position: relative;
+    top: -430px;
+    left: 10px;
+}
+
+.slideshow-container {
+    width: 750px;
+    position: relative;
+    margin-left: 25%;
+    height: min-content;
+}
+
+h3 {
+    top: 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 75px;
+}
+
+.mySlides {
+    position: relative;
+    display: none;
+    background-color: white;
+    right: 200px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    right: 940px;
+    z-index: 10;
+}
+
+.next {
+    position: absolute;
+    left: 535px;
+}

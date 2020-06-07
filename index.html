@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Menu </title>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <script src="/Javascript/Navbar.js"></script>
+    <script src="/Javascript/tennis.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">Forløbene</a>
+                <div class="drop-con">
+                    <a href="#myApp">myApp</a>
+                    <a href="#Lyd">Lyd</a>
+                    <a href="#javascript">JavaScript</a>
+                    <a href="#databaser">Databaser</a>
+                    <a href="#robot">Selvkørende robotter</a>
+                    <a href="#program">Kreativ programmering</a>
+                    <a href="#cookie">Sporing af brugere på nettet</a>
+                    <a href="#krypto">Kryptologi</a>
+                    <a href="#html">HTML</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">Uddybet</a>
+                <div class="drop-con">
+                    <a href="myApp.html">myApp</a>
+                    <a href="lyd.html">Lyd</a>
+                    <a href="Javascript.html">JavaScript</a>
+                    <a href="databaser.html">Databaser</a>
+                    <a href="robotter.html">Selvkørende robotter</a>
+                    <a href="program.html">Kreativ programmering</a>
+                    <a href="cookie.html">Sporing af brugere på nettet</a>
+                    <a href="krypto.html">Kryptologi</a>
+                    <a href="html.html">HTML</a>
+                </div>
+            </li>
+            <li style="float: right;"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="cookies" style="display: shown;">
+        <p>Ved at bruge denne hjemmeside accepterer du vores cookies. <a id="rick" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Læs mere her!</a></p>
+        <button class="close" onclick="this.parentElement.style.bottom = '-100px'"> Jeg accepterer</button>
+    </div>
+
+    <div class="bgimg1">
+        <div class="caption">
+            <span class="border"> Velkommen til! </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Dette er hjemmesiden </h3>
+        <p> Her vil jeg kort introducere emnerne jeg har været igennem i år. Herefter kan man bruge navigationsbaren i toppen til at surfe rundt på denne interaktive hjemmeside </p>
+        </p>
+    </div>
+
+    <div class="bgimg2">
+        <div class="caption" id="myApp">
+            <span class="border"> myApp </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Første forløb </h3>
+        <p> I vores første forløb lavede vi en simpel app, der kunne omregne fra en valuta-kurs til en anden. Vælg myApp på menuen for at læse mere! </p>
+    </div>
+
+    <div class="bgimg3">
+        <video id="vid" height="500px" style="margin: auto;">
+            <source src="billeder/Menu/beatles.mp4" type="video/mp4"> 
+        </video>
+        <div class="caption" id="Lyd">
+            <span class="border"> Lyd </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Andet forløb </h3>
+        <p> I det andet forløb havde vi om lyd. Betydningen af lyd, kvaliteten af lyd, hvordan lyden fungerer osv. Dette kan du høre mere om under menuen Lyd!</p>
+    </div>
+
+    <div class="bgimg4">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="caption" id="javascript">
+            <span class="border" style="position: relative; left: 30%;"> Javascript </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Tredje forløb </h3>
+        <p> I det tredje forløb havde vi om Javascript, hvor vi lærte at animere snemænd og tegne huse. Dette kan du se mere om under menuen Javascript! Forresten så er der ingen af de to tennisspillere, der vinder, da de har den samme AI. Musens position
+            duede ikke ellers kunne det have været DIG der vandt... </p>
+    </div>
+
+    <div class="bgimg5">
+        <div class="caption" id="databaser">
+            <span class="border"> Databaser </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Fjerde forløb </h3>
+        <p> I det fjerde forløb havde vi om databaser, hvor vi lavede vores egen database, der skulle hjælpe unge med at finde boliger at bo i sammen med andre. Se mere under Databaser! </p>
+    </div>
+
+    <div class="bgimg6">
+        <div class="caption" id="robot">
+            <span class="border"> Selvkørende robotter </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Femte forløb </h3>
+        <p> I vores femte forløb havde vi om selvkørende robotter. Vi lavede en robot, der kunne finde vej i en labyrint, overvejede hvordan robotter kunne hjælpe hospitaler og diskutterede etiske spørgsmål om kunstig intelligens. Se mere under selvkørende
+            biler! </p>
+    </div>
+
+    <div class="bgimg7">
+        <div class="caption" id="program">
+            <span class="border"> Kreativ programmering </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Sjette forløb </h3>
+        <p> I vores sjette forløb brugte vi processing til at lave kreative ting. Der blevet bygget et hus og lavet tegninger. Se mere under Kreativ programmering! </p>
+    </div>
+
+    <div class="bgimg8">
+        <div class="caption" id="cookie">
+            <span class="border"> Sporing af brugere på nettet </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Syvende forløb </h3>
+        <p> I vores syvende forløb lærte vi om sikker færdsel på nettet og hvordan selskaber følger med i alt hvad vi laver. Accepter denne sides Cookies og så kan du læse mere om det under Cookies! </p>
+    </div>
+
+    <div class="bgimg9">
+        <div class="caption" id="krypto">
+            <span class="border"> Kryptologi </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Ottende forløb </h3>
+        <p> I det ottende forløb havde vi om kryptering, hvor vi lærte om hvordan man kunne skrive hemmelige beskeder og hvordan de kan afkrypteres. Ke xmp ovctxivmrk jsv ex peiwimqiv (Caesar, rykket 4) </p>
+    </div>
+
+    <div class="bgimg10">
+        <div class="caption" id="html">
+            <span class="border"> HTML </span>
+        </div>
+    </div>
+
+    <div class="descr">
+        <h3> Niende forløb </h3>
+        <p> Som det niende forløb har vi skulle lave en hjemmeside. Du sider faktisk på den hjemmeside lige nu, hvis det ikke skal være helt løgn. WOW. Ja jeg ved det godt. Det er vildt. Du kan desværre ikke få mere at vide om det. Du sidder lidt mit i produktet...!
+        </p>
+    </div>
+</body>
+
+</html>

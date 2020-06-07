@@ -1,0 +1,27 @@
+#body {
+    position: relative;
+    top: 53px;
+    background-color: black;
+    width: 1280px;
+    height: 557px;
+}
+
+#titel {
+    background-color: black;
+    position: relative;
+    width: 480px;
+    height: 400px;
+    bottom: 525px;
+    left: 400px;
+}
+
+#titel h1 {
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#titel p {
+    color: white;
+    margin: 10px;
+}

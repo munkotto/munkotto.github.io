@@ -1,0 +1,40 @@
+#lyd {
+    position: relative;
+    top: 53px;
+}
+
+h1,
+h2 {
+    position: relative;
+    text-align: center;
+    top: 200px;
+}
+
+#control {
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 90%;
+    left: 95%;
+}
+
+#control button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#control p.spil {
+    position: relative;
+    font-size: 30px;
+    bottom: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#control p.pause {
+    position: relative;
+    font-size: 30px;
+    bottom: 28px;
+}

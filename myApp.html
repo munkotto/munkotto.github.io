@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/myApp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Javascript/Navbar.js"></script>
+    <script src="/Javascript/myApp.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">myApp</a>
+                <div class="drop-con">
+                    <a href="lyd.html">Lyd</a>
+                    <a href="Javascript.html">JavaScript</a>
+                    <a href="databaser.html">Databaser</a>
+                    <a href="robotter.html">Selvkørende robotter</a>
+                    <a href="program.html">Kreativ programmering</a>
+                    <a href="cookie.html">Sporing af brugere på nettet</a>
+                    <a href="krypto.html">Kryptologi</a>
+                    <a href="html.html">HTML</a>
+                </div>
+            </li>
+            <li style="float: right"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="myApp">
+        <div class="top">
+            <div class="img1">
+                <img src="Billeder/myApp/iphone.jfif" alt="">
+            </div>
+            <div class="start">
+                <div class="headline">
+                    <h1> myApp </h1>
+                </div>
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="Billeder/myApp/samsung.jpg" alt="">
+            </div>
+        </div>
+        <div class="body">
+            <p>myApp var første gang mange af os havde prøvet at programmere, så derfor skulle vi lære de basale ting, som navngivning, variabler og typer heraf osv.</p>
+            <p>Siden at jeg har lavet hele den her hjemmeside må man formode at jeg har en nogenlunde forståelse for det og siden det kun er dig, som lærer og mig, der behæver at gå i gennem det her formoder jeg også at du har en vis form for forståelse.</p>
+            <p>Dog har det der med navnene aldrig lige været mig og derfor er mine navne nogle gange lidt svære for andre at forstå, men det bliver der arbejdet på.</p>
+            <p>Men for at komme videre så skulle vores app have tre funktioner:</p>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides" id="video" style="display: block;">
+                    <h3>1. Valuta omregner</h3>
+                    <div>
+                        <video src="/Billeder/myApp/Valuta.mp4" controls muted></video>
+                    </div>
+                    <div>
+                        <p>Den første funktion var at den kunne omregne fra en valuta til en anden, hvilket kan ses i videoen.</p>
+                        <p>På min App var det muligt at omregne uden selv at skrive kursen for euro, men hvis man ville det var der også mulighed for dette.</p>
+                        <p>Der kan både regne fra DKK om til Euro og fra Euro til DKK</p>
+                    </div>
+                </div>
+                <div class="mySlides" id="video">
+                    <h3>2. Rabat</h3>
+                    <div>
+                        <video src="/Billeder/myApp/Rabat.mp4" controls muted></video>
+                    </div>
+                    <div>
+                        <p>Den anden funktion var at beregne prisen efter rabat, hvilket kan ses i videoen </p>
+                        <p>Det er egentligt meget simpelt så bare gå videre til sidste</p>
+                        <br><br><br><br>
+                    </div>
+                </div>
+                <div class="mySlides" id="video">
+                    <h3>3. BMI</h3>
+                    <div>
+                        <video src="/Billeder/myApp/BMI.mp4" controls muted></video>
+                    </div>
+                    <div>
+                        <p>Den tredje funktion var udrengning af BMI</p>
+                        <p>Det fungere så bare gå videre til næste forløb</p>
+                        <br>
+                        <p>Derudover skulle vi også lave en User Evaluation Test</p>
+                        <p>Jeg har nu anerkendt denne tests eksistens men mere kommer der helle ikke til at ske</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

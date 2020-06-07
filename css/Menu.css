@@ -1,0 +1,196 @@
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bgimg1,
+.bgimg2,
+.bgimg3,
+.bgimg4,
+.bgimg5,
+.bgimg6,
+.bgimg7,
+.bgimg8,
+.bgimg9,
+.bgimg10 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg1 {
+    position: relative;
+    top: 50px;
+    background-image: url(/Billeder/Menu/coding.jpg);
+    min-height: 500px;
+}
+
+.bgimg2 {
+    background-image: url(/Billeder/Menu/myApp.jpg);
+    min-height: 500px;
+}
+
+#vid {
+    position: relative;
+    width: 100%;
+}
+
+#gameCanvas {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left: 30%;
+}
+
+.bgimg4 {
+    width: 800px;
+    height: 600px;
+}
+
+.bgimg5 {
+    background-image: url(/Billeder/Menu/Database.jpg);
+    min-height: 500px;
+}
+
+.bgimg6 {
+    background-image: url(/Billeder/Menu/Selvkørende\ bil.png);
+    min-height: 500px;
+}
+
+.bgimg7 {
+    background-image: url(/Billeder/Menu/Hus.jpg);
+    min-height: 500px;
+}
+
+.bgimg8 {
+    background-image: url(/Billeder/Menu/Cookies.jfif);
+    min-height: 500px;
+}
+
+.bgimg9 {
+    background-image: url(/Billeder/Menu/kryptologi.jpg);
+    min-height: 500px;
+}
+
+.bgimg10 {
+    background-image: url(/Billeder/Menu/hjemmeside.jpg);
+    min-height: 500px;
+}
+
+.caption {
+    font: 20px "Lato", sans-serif;
+    background-color: transparent;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    text-align: center;
+}
+
+.descr {
+    background-color: white;
+    color: dimgray;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.card1,
+.card2,
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 9%;
+    text-align: center;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 50px;
+    top: 75px;
+}
+
+.img {
+    width: 300px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+#cookies {
+    position: fixed;
+    bottom: -100px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: bottom 2s;
+}
+
+.close {
+    height: auto;
+    width: auto;
+    text-align: center;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#rick {
+    font-size: 13px;
+    list-style-type: none;
+    color: blue;
+    text-decoration: underline;
+}

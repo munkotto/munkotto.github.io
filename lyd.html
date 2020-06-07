@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/lyd.css">
+    <script src="/Javascript/Navbar.js"></script>
+    <script src="/Javascript/lyd.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">Lyd</a>
+                <div class="drop-con">
+                    <a href="myApp.html">myApp</a>
+                    <a href="Javascript.html">JavaScript</a>
+                    <a href="databaser.html">Databaser</a>
+                    <a href="robotter.html">Selvkørende robotter</a>
+                    <a href="program.html">Kreativ programmering</a>
+                    <a href="cookie.html">Sporing af brugere på nettet</a>
+                    <a href="krypto.html">Kryptologi</a>
+                    <a href="html.html">HTML</a>
+                </div>
+            </li>
+            <li style="float: right"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="lyd">
+        <div>
+            <audio id="start" src="Billeder/Lyd/The Beatles - Hey Jude (1).mp3" hidden></audio>
+        </div>
+
+        <h1>Vi lærte noget og det anerkender jeg, men altså det er også det</h1>
+        <h2>Derudover undskylder jeg denne kedelige side. Der er en play-knap nede i venstre hjørne</h2>
+
+        <div id="control">
+            <button onclick="lyd()">
+                <p id="pp" class="spil">&#9658</p>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
