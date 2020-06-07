@@ -1,13 +1,13 @@
-head *{
+head * {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
 }
 
-.row{
+.row {
     position: relative;
     top: 0px;
     width: 100%;
@@ -17,47 +17,47 @@ body{
 .left {
     width: 330px;
     height: 100%;
-    padding:0px;
+    padding: 0px;
     margin: 0px;
     content: 0px;
     border: 0px;
     float: left;
 }
 
-fieldset{
-   border-color: lightgray;
-   border-width: 4px;
-   border-style: solid;
+fieldset {
+    border-color: lightgray;
+    border-width: 4px;
+    border-style: solid;
 }
 
-form{
+form {
     padding: 0px 5px 5px 5px;
 }
 
-.left-content{
+.left-content {
     position: relative;
     left: 20px;
     width: 300px;
 }
 
 #appartmentselectform {
-    background-color:#a9a9a9;
+    background-color: #a9a9a9;
     border-width: 100px;
 }
 
-#cityselector{
+#cityselector {
     min-width: 90%;
     max-width: 90%;
     margin-bottom: 5px;
 }
 
-.main-content{
+.main-content {
     position: relative;
     left: 40px;
     float: left;
 }
 
-.apartment{
+.apartment {
     position: relative;
     width: 850px;
     height: 133.5px;
@@ -65,56 +65,36 @@ form{
     margin-bottom: 20px;
 }
 
-.img{
+.img {
     position: relative;
     height: 133.5px;
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.3);
     transition: 0.5s;
     z-index: 9;
 }
 
-.text, .text-placeholder{
+.text,
+.text-placeholder {
     position: relative;
     bottom: 12.5px;
     widows: auto;
     height: 134px;
 }
 
-.txt{
+.txt {
     margin: 0px;
     margin-bottom: 5px;
 }
 
-.img, .text{
+.img,
+.text {
     display: inline-block;
 }
 
-.left, .main-content{
+.left,
+.main-content {
     display: inline-block;
 }
-
-@keyframes example {
-    0%   {left:-500px; top:75px;}
-    100% {left:1500px; top:75px;}
-  }
-
-  .ani{
-      width: fit-content;
-      height: fit-content;
-      background-color:grey;
-      position: relative;
-      left: -500px;
-      animation-name: example;
-      animation-duration: 10s;
-      animation-timing-function: linear;
-      z-index: 9;
-  }
-
-  #ani-text{
-      font-size: 30px;
-      color: white;
-      padding: 2px;
-  }
