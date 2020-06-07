@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title>Student Appartments</title>
+        <link rel="stylesheet" href="css/Search.css">
+        <link rel="stylesheet" href="css/Navbar.css">
+        <script src="Javascript/Navbar.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+        <script src="Javascript/app.js" type="application/javascript"></script>
+        <script src="Javascript/mainController.js" type="application/javascript"></script>
+    </head>
+    
+    <body ng-app="studentAppartments" ng-controller="mainController">
+        <div id="navbar">
+            <ul>
+                <li><a href="Menu.html">Menu</a></li>
+                <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">Cities</a>
+                <div class="drop-con">
+                    <a href="https://en.wikipedia.org/wiki/London">London</a>
+                    <a href="https://en.wikipedia.org/wiki/Manchester">Manchester</a>
+                    <a href="https://en.wikipedia.org/wiki/Edinburgh">Edinburgh</a>
+                    <a href="https://en.wikipedia.org/wiki/Liverpool">Liverpool</a>
+                    <a href="https://en.wikipedia.org/wiki/Cardiff">Cardiff</a>
+                </div>
+                </li>
+                <li><a href="Søgning.html">Search</a></li>
+                <li style="float: right"><a href="Contact.html">Contact</a></li>
+           </ul>
+        </div>
+
+        <div class="ani">
+                <p id="ani-text"> Tak for den fantastiske kode Oliver!</p>
+        </div>
+
+        <div class="row">
+            <div class="left">
+            <div class="left-content">
+                <form id="appartmentselectform">
+                    <fieldset>
+                    <legend>Find Apartment:</legend>
+                    <div id="back">
+                    <label title="cityselector">Select a city</label><br />
+                    <select id="cityselector" 
+                            ng-model="selectedCity"  
+                            ng-options="item.id as item.name for item in cities"
+                            ng-change="cityChanged(selectedCity);" >
+                    </select>
+                    
+                    <br /> <br/>           
+                    <label title="universityselector">Select university</label><br />
+                    <select id="universityselector" 
+                            ng-model="selectedUniversity"
+                            ng-options="item.id as item.name for item in universities" 
+                            ng-change="universityChanged(selectedUniversity);" >
+                            
+                    </select>
+                    </div>
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+            <div class="main-content">
+                <div class="apartment" ng-repeat="apartment in apartments">
+                    <div class="img">
+                        <div class="img-placeholder">
+                            <img ng-src="{{apartment.imageUrl}}" width=200px>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="text-placeholder ">
+                            <h2 class="txt"> Apartment with {{apartment.Roommates}} mate(s) </h2>
+                            <p class="txt"> This i an apartment in {{apartment.city}}</p> <!--TODO have description as property on apartment object-->
+                            <span class="detailslabel">Near: </span><span>{{apartment.University}}</span>
+                            <span class="seperator">|</span>
+                            <span class="detailslabel">Price: </span><span>£{{apartment.price}}</span>
+                            <span class="seperator">|</span>
+                            <span class="detailslabel">Contact: </span><span>{{apartment.contact}}</span>
+                            <br><br>
+                            <span class="detailslabel"> Price if split: £<span id="split"></span>
+                                <script type="text/javascript">
+                                    var a = "{{apartment.Roommates}}";
+                                    var b = "{{apartment.price}}";
+                                    var splity = b + "/" + "(" + a + "+1)";
+                                    document.getElementById("split").innerHTML = splity;
+                                </script>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
