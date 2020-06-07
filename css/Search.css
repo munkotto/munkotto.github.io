@@ -9,7 +9,7 @@ body {
 
 .row {
     position: relative;
-    top: 0px;
+    top: 100px;
     width: 100%;
     height: 100%;
 }
