@@ -37,15 +37,16 @@ p {
     width: 100%;
 }
 
-#gameCanvas {
-    width: 800px;
-    height: 600px;
-    left: 50%;
-}
-
 .bgimg4 {
     width: 800px;
     height: 600px;
+}
+
+#myCanvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
 }
 
 .bgimg5 {
