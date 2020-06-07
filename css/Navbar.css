@@ -70,7 +70,7 @@ li.drop {
 }
 
 .drop-con a:hover {
-    background-color: aliceblue;
+    background-color: #555555;
 }
 
 .drop:hover .drop-con {
