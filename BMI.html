@@ -32,24 +32,24 @@
     </div>
 
     <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto;">
-        <h1 style="text-align: center; "> Er du tyk! Det tror jeg nok! Men nu kan du finde ud af det :O</h1>
+        <h1 style="text-align: center;"> Er du tyk! Det tror jeg nok! Men nu kan du finde ud af det :O</h1>
     </div>
 
     <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto; margin-top:auto;">
-        <input type="text " id="h " placeholder="Din højde (cm) " onchange="minHojde(this.value)"></input>
-        <input type="text " id="m " placeholder="Din vægt (kg) " onchange="minVegt(this.value)"></input>
+        <input type="number" id="h" placeholder="Din højde (cm) " onchange="minHojde(this.value)"></input>
+        <input type="number" id="m" placeholder="Din vægt (kg) " onchange="minVegt(this.value)"></input>
         <button type="btn " onclick="BMI() "> Klik her!</button>
     </div>
 
     <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto;">
-        <p id="resultat " style="text-align: center;"></p>
+        <p id="resultat" style="text-align: center;"></p>
     </div>
 
     <div>
         <label for="man"> Mand!!! </label>
-        <input type="checkbox" name="man" id="isMan" value="0" onclick="checkMan()" onclick="tjek(1)">
+        <input type="checkbox" name="man" id="isMan" value="0" onclick="checkMan()">
         <label for="woman">Kvinde???</label>
-        <input type="checkbox" name="woman" id="isWoman" value="0" onclick="checkWoman()" onclick="tjek(2)">
+        <input type="checkbox" name="woman" id="isWoman" value="0" onclick="checkWoman()">
     </div>
 
     <div id="picture" style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto; margin-top:auto;">
