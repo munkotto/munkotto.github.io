@@ -5,9 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatshaming</title>
+    <script src="/Javascript/BMI.js"></script>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/BMI.css">
 </head>
 
 <body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li class="drop">
+                <a href="javascript:void(0)" class="dropbtn">Fatshaming</a>
+                <div class="drop-con">
+                    <a href="myApp.html">myApp</a>
+                    <a href="lyd.html">Lyd</a>
+                    <a href="Javascript.html">JavaScript</a>
+                    <a href="databaser.html">Databaser</a>
+                    <a href="robotter.html">Selvkørende robotter</a>
+                    <a href="cookie.html">Sporing af brugere på nettet</a>
+                    <a href="krypto.html">Kryptologi</a>
+                    <a href="html.html">HTML</a>
+                </div>
+            </li>
+            <li style="float: right"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto;">
+        <h1 style="text-align: center; "> Er du tyk! Det tror jeg nok! Men nu kan du finde ud af det :O</h1>
+    </div>
+
+    <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto; margin-top:auto;">
+        <input type="text " id="h " placeholder="Din højde (cm) " onchange="minHojde(this.value)"></input>
+        <input type="text " id="m " placeholder="Din vægt (kg) " onchange="minVegt(this.value)"></input>
+        <button type="btn " onclick="BMI() "> Klik her!</button>
+    </div>
+
+    <div style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto;">
+        <p id="resultat " style="text-align: center;"></p>
+    </div>
+
+    <div>
+        <label for="man"> Mand!!! </label>
+        <input type="checkbox" name="man" id="isMan" value="0" onclick="checkMan()" onclick="tjek(1)">
+        <label for="woman">Kvinde???</label>
+        <input type="checkbox" name="woman" id="isWoman" value="0" onclick="checkWoman()" onclick="tjek(2)">
+    </div>
+
+    <div id="picture" style="position: relative; top: 53px; width: fit-content; margin-left: auto; margin-right: auto; margin-top:auto;">
+        <img src="/Billeder/BMI/man2.png" alt="" width="200" height="400" id="man" style="display: none;">
+        <img src="/Billeder/BMI/specs-girl-4.png" alt="" width="200" height="400" id="woman" style="display: none;">
+    </div>
 
 </body>
 
