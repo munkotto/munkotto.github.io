@@ -5,11 +5,11 @@ function BMI() {
     if (h < 10) {
         h *= 100;
     }
-    var bmi = m / (h / 100 * h / 100) + 20;
-    if (bmi < 38.5) {
-        document.getElementById("resultat").innerHTML = "Du er tyk, men det kunne være meget værre. Din BMI er: " + bmi.toFixed(2) + ". Det skal nok gå!";
-    } else if (bmi >= 38.5 && bmi <= 45) {
-        document.getElementById("resultat").innerHTML = "Du er tyk. Pas på med maden. Din BMI er: " + bmi.toFixed(2) + ". Du kan stadig redde det!";
+    var bmi = m / (h / 100 * h / 100);
+    if (bmi < 18.5) {
+        document.getElementById("resultat").innerHTML = "Du er undervægtig :O. Din BMI er: " + bmi.toFixed(2) + ". Spis noget mad. Det skulle være sundt!";
+    } else if (bmi >= 18.5 && bmi <= 25) {
+        document.getElementById("resultat").innerHTML = "Du er gennemsnitligt. Din BMI er: " + bmi.toFixed(2) + ". Godt klaret!";
     } else if (bmi > 25) {
         document.getElementById("resultat").innerHTML = "WOW hvor meget spiser du lige?! Din BMI er: " + bmi.toFixed(2) + ". Jeg ville passe noget på hvis jeg var dig!";
     }
